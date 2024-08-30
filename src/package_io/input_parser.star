@@ -6,23 +6,23 @@ sanity_check = import_module("./sanity_check.star")
 
 DEFAULT_EL_IMAGES = {
     "op-geth": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:latest",
-    "op-reth": "ghcr.io/paradigmxyz/op-reth:latest",
+    "op-reth": "ghcr.io/paradigmxyz/alphanet:latest",
     "op-erigon": "testinprod/op-erigon:latest",
     "op-nethermind": "nethermindeth/nethermind:op-c482d56",
     "op-besu": "ghcr.io/optimism-java/op-besu:latest",
 }
 
 DEFAULT_CL_IMAGES = {
-    "op-node": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:develop",
+    "op-node": "rjected/op-node:v4",
     "hildr": "ghcr.io/optimism-java/hildr:latest",
 }
 
 DEFAULT_BATCHER_IMAGES = {
-    "op-batcher": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-batcher:develop",
+    "op-batcher": "rjected/op-batcher:v4",
 }
 
 DEFAULT_PROPOSER_IMAGES = {
-    "op-proposer": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-proposer:develop",
+    "op-proposer": "rjected/op-proposer:v4",
 }
 
 ATTR_TO_BE_SKIPPED_AT_ROOT = (
